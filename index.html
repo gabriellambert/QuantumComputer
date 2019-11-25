@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<title>Computação Quântica</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {width: 120px;background: #222;}
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-left: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  .displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+  h3 strong {
+    color: #9a999e;
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  .borda {
+    border: 2px solid #99989d;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <img src="atom_icon.png" width="45%">
+    <p>COMPUTAÇÃO QUÂNTICA</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <!-- <i class="fa fa-question-circle-o w3-xxlarge"></i> -->
+    <p>O QUE É</p>
+  </a>
+  <a href="#componentes" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>ESTRUTURA</p>
+  </a>
+  <a href="#exemplos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>EXEMPLO</p>
+  </a>
+  <a href="#supremacia" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>SUPREMACIA</p>
+  </a>
+  <a href="#comercial" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>COMERCIAL</p>
+  </a>
+  <a href="#futuro" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>O FUTURO</p>
+  </a>
+  <a href="#conclusao" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>CONCLUSÃO</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#exemplos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <img src="background.png" alt="boy" class="w3-image" width="660" style="float: right; margin-top: -45px;">
+    <h1 class="w3-jumbo" style="text-align: left; padding-top: 80px;">Computação Quântica</h1>
+    <h2 style="text-align: left;">Uma nova luz.</h2>
+    <br><br><br><br><br><br><br>
+    <div style="text-align: left;">
+      <p>Gabriel M. Lambert</p>
+      <p>Octavio Santana</p>
+      <p>Pedro Henrique Ronchini</p>
+    </div>
+  </header>
+
+  <!-- O que é -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">O que é?</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="bit.qubit.png">
+    <p>A base da computação quântica é a representação de um bit, o Qubit. E necessário um sistema quântico que
+      apresente dois estados bem definidos, indicados por |0 > e |1 >. Apesar de possuir estes dois estados quânticos
+      fundamentais, o sistema utilizado poderá se encontrar em um estado que é na realidade uma sobreposição dos estados
+      fundamentais. A sobreposição é indicada por uma distribuição probabilística através dos estados fundamentais. O
+      estado do sistema fica descrito por um vetor, cada posição do vetor está associada a um estado fundamental e o
+      valor representado define a probabilidade do Qubit estar naquele estado fundamental. Em um sistema com n Qubits
+      teremos 2n estados fundamentais possíveis. Ao medir o sistema obtemos um único valor que indica apenas o conjunto
+      de estados fundamentais nos quais cada Qubit do sistema se encontra, o estado medido segue à distribuição
+      probabilística. Este mecanismo é a base de concepção de uma máquina probabilística de Turing.</p>
+  </div>
+
+  <!-- Componentes -->
+  <div class="w3-padding-64 w3-content" id="componentes">
+    <h2 class="w3-text-light-grey">Componentes</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="components.png" alt="Components" style="width:95%; margin-top: -100px;">
+    <p style="text-align:right;">Fonte: <a href="https://www.engadget.com/2018/02/23/ibm-q-quantum-computer-experiments/"
+                                           target="_blank">Not even IBM is sure where its quantum computer experiments
+                                                          will lead</a></p>
+  </div>
+
+  <!-- Exemplo -->
+  <div class="w3-padding-64 w3-content" id="exemplos">
+    <h2 class="w3-text-light-grey">Problema Real</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="senha.png" alt="senha" class="displayed">
+    <p style="text-align: justify;">Considere que, para abrir uma porta, seja preciso inserir uma senha baseada em
+      lâmpadas acesas ou apagadas:<br>
+      <br><strong>Computador Tradicional</strong><br>
+      Tentaria descobrir a combinação correta - mas isso teria de calcular uma possibilidade de cada vez.<br>
+      <br><strong>Computador Quântico</strong><br>
+      Graças à superposição, seria capaz de realizar todos os cálculos ao mesmo tempo e com isso testar todas as
+      possibilidades simultaneamente.
+    </p>
+  </div>
+
+  <!-- Supremacia -->
+  <div class="w3-padding-64 w3-content" id="supremacia">
+    <h2 class="w3-text-light-grey">Supremacia Quântica</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <br>
+    <div style="color: #edeef0;">
+      <h3 style="padding-left: 50px;"><strong>1. </strong>Escolha um circuito</h3>
+      <br>
+      <h3 style="padding-left: 125px;"><strong>2. </strong>Execute-o em um computador quântico</h3>
+      <br>
+      <h3 style="padding-left: 200px;"><strong>3. </strong>Simule em um computador tradicional</h3>
+    </div>
+    <br>
+    <div class="borda">
+      <h3><strong>Google</strong></h3>
+      <h2>200 segundos X 10 mil anos</h2>
+    </div>
+    <p style="text-align:right;">Fonte: <a href="https://www.youtube.com/watch?v=-ZNEzzDcllU" target="_blank">Demonstrating Quantum Supremacy</a></p>
+  </div>
+
+    <!-- Comercial -->
+  <div class="w3-padding-64 w3-content" id="comercial">
+    <h2 class="w3-text-light-grey">QSystem One</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="pessoal.png" alt="pessoal" class="displayed" style="width:75%; margin-left: 300px;margin-top: -40px">
+    <h4>Capacidade: 20 QuBits</h4>
+    <br><br><br>
+    <p style="text-align: justify;">IBM apresenta primeiro computador quântico pensado para uso comercial. <br>
+      Durante a Consumer Electronic Show (CES), a empresa anunciou seu primeiro sistema integrado do tipo, desenhado
+      para uso comercial. Chamado de Q System One, o hardware de 20 qubits de capacidade foi pensado para operar como um
+      mainframe, fora do ambiente de laboratório. <br>
+      Quaisquer mudanças eletromagnéticas ou vibrações, por menores que sejam, fazem com eles percam toda sua capacidade
+      quântica, como destaca da IBM. Além disso, os chips do tipo precisam ser mantidos a uma temperatura próxima do
+      zero absoluto para funcionar.<br>
+      Por isso há toda uma proteção reforçada em torno do Q System One. Essa “jaula” ajuda a bloquear interferências e
+      mantém a máquina funcionamento.
+    </p>
+  </div>
+
+  <!-- Futuro -->
+  <div class="w3-padding-64 w3-content" id="futuro">
+    <h2 class="w3-text-light-grey">O Futuro</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <img src="future.jpg" alt="senha" class="displayed" style="width: 100%; margin-left: 80px; margin-top: -50px;">
+    <p style="text-align: justify;">E por que não estamos usando a computação quântica?<br>
+      Obter todas essas vantagens tem um preço significativo. A Minsait aponta dois desafios fundamentais para serem
+      resolvidos até à adoção eficaz do computador quântico em massa: superar condições físicas e garantir
+      cibersegurança das informações contidas nos qubits.
+    </p>
+  </div>
+
+      <!-- Conclusão -->
+  <div class="w3-padding-64 w3-content" id="conclusao">
+    <h2 class="w3-text-light-grey"><strong>Obrigado!</strong></h2>
+    <img src="gatao.png" alt="pessoal" class="displayed" style="width:85%; margin-left: 300px;margin-top: 0px; opacity: 0.6">
+    <br><br>
+    <p style="text-align: justify;">O Gato de Schrödinger. <br>
+      A triste história de Schrödinger e seu bichinho de estimação foi criada em 1935 (2 anos após ele ganhar seu Nobel)
+      para explicar o Princípio da Incerteza, criado por Werner Heisenberg - um dos pilares da mecânica quântica.
+      <br>
+      -Temos uma caixa fechada e não podemos ver o que se passa lá dentro.<br>
+      -Na caixa está um gato, um vidro de veneno, um martelo, 1 único átomo de um elemento radioativo qualquer e um
+      instrumento que detecta radiação.<br>
+      -Se a radiação for detectada, o martelo é acionado, o vidro de veneno é quebrado e o gato morre; do contrário, o
+      gato vive e todos ficam felizes.<br>
+      <br>
+      Explicando a teoria de  Schrödinger:
+      <br>
+      -Dessa forma temos 2 possíveis cenários : Em um deles o instrumento percebe a radiação e dispara o martelo matando
+      o gatinho, no outro não. Segundo Schrödinger, como o átomo radioativo pode estar ou não estar em qualquer lugar ao
+      mesmo tempo, os dois cenários acontecem simultaneamente, estando o gato vivo e morto, pelo menos até a hora em que
+      você resolver abrir a caixa.
+    </p>
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by Gabriel, Octavio e Pedro</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
